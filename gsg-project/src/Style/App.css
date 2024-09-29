@@ -1,0 +1,13 @@
+.main-container {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background: #fffefe;
+}
+
+.title {
+	position: relative;
+	text-align: center;
+	color: #353535;
+	font-size: 50px;
+	font-family: "Cormorant Garamond", serif;
+}

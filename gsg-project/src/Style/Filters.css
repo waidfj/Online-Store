@@ -1,0 +1,106 @@
+.filter-container {
+	margin: 20px;
+}
+
+.categoryBtn {
+	width: 130px;
+	height: 40px;
+	margin: 9px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: "Lato", sans-serif;
+	font-weight: 549.5;
+	font-size: 15px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+	background: radial-gradient(
+		circle,
+		rgb(119, 84, 185) 0%,
+		rgb(121, 82, 194) 100%
+	);
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+
+.categoryBtn span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.categoryBtn:before,
+.categoryBtn:after {
+	position: absolute;
+	content: "";
+	height: 0%;
+	width: 1px;
+	box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+		-4px -4px 5px 0px rgba(255, 255, 255, 1),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.categoryBtn:before {
+	right: 0;
+	top: 0;
+	transition: all 500ms ease;
+}
+
+.categoryBtn:after {
+	left: 0;
+	bottom: 0;
+	transition: all 500ms ease;
+}
+
+.categoryBtn:hover {
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+	transform: scale(1.005);
+}
+
+.categoryBtn span:before,
+.categoryBtn span:after {
+	position: absolute;
+	content: "";
+	box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
+		-4px -4px 5px 0px rgba(255, 255, 255, 1),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.categoryBtn span:before {
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 0.5px;
+	transition: all 500ms ease;
+}
+
+.categoryBtn span:after {
+	right: 0;
+	bottom: 0;
+	width: 0%;
+	height: 0.5px;
+	transition: all 500ms ease;
+}
+
+.categoryBtn span:hover:before {
+	width: 100%;
+}
+
+.categoryBtn span:hover:after {
+	width: 100%;
+}
+
+.categoryBtn.active {
+	/* background: rgba(207, 164, 231, 0.452); */
+	background: rgba(195, 154, 218, 0.671);
+	border: none;
+	color: #000;
+}
